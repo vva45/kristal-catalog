@@ -7,12 +7,12 @@ export default function Header() {
 
         <Link href="/" className="flex items-center gap-4">
           <Image
-            src="/logo.png"
-            alt="KRISTALL FENSTER"
-            width={80}
-            height={80}
-            className="object-contain"
-          />
+  src="/logo.png"
+  alt="Kristall Fenster"
+  width={80}
+  height={80}
+  style={{ width: "auto", height: "75px" }}
+/>
 
           <div className="leading-none">
     <div className="text-yellow-400 font-extrabold text-4xl tracking-wide">
