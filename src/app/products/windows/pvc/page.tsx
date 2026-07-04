@@ -31,12 +31,12 @@ export default function PVCPage() {
 />
 <ProductCard
   title="NORDLINE"
-  image="/images/pvc/nordline.png"
+  image="/images/pvc/NORDLINE.png"
   pdf="/pdf/pvc/nordline.pdf"
 />
 <ProductCard
   title="MONOBLOCK"
-  image="/images/pvc/monoblock.png"
+  image="/images/pvc/MONOBLOCK.png"
   pdf="/pdf/pvc/monoblock.pdf"
 />
 
