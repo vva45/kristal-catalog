@@ -30,14 +30,14 @@ export default function Home() {
     </p>
 
     <h1 className="text-6xl md:text-7xl font-bold max-w-3xl leading-tight mb-8">
-      Elegancia y funcionalidad
+     Elegance and functionality
       <br />
-      para cada espacio
+      for every space
     </h1>
 
     <p className="text-xl max-w-2xl mb-10">
-      Ventanas, puertas, persianas y mucho más.
-      Instalación profesional en Hechingen y alrededores.
+      Windows, doors, roller shutters and much more.
+      Professional installation in Hechingen and surrounding areas.
     </p>
 
     <a
