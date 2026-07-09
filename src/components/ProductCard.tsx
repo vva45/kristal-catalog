@@ -10,7 +10,18 @@ export default function ProductCard({
   pdf,
 }: ProductCardProps) {
   return (
-    <div className="bg-white rounded-xl overflow-hidden">
+    <div
+      className="
+        bg-white
+        rounded-xl
+        overflow-hidden
+        shadow-lg
+        transition-all
+        duration-300
+        hover:shadow-2xl
+        hover:-translate-y-1
+      "
+    >
       <img
         src={image}
         alt={title}
@@ -25,7 +36,19 @@ export default function ProductCard({
         <a
           href={pdf}
           target="_blank"
-          className="bg-black text-white px-4 py-2 rounded-lg inline-block"
+          rel="noopener noreferrer"
+          className="
+            inline-block
+            bg-black
+            text-white
+            px-4
+            py-2
+            rounded-lg
+            transition-colors
+            duration-300
+            hover:bg-[#D4AF37]
+            hover:text-black
+          "
         >
           Technical Data
         </a>
