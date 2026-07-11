@@ -16,28 +16,16 @@ export default function WoodPage() {
         <div className="grid md:grid-cols-2 gap-10">
 
           <ProductCard
-  title="WOOD 78"
-  image="/images/wood/wood-78.png"
-  pdf="/pdf/wood/wood-78.pdf"
-/>
+            title="WOOD 78"
+            image="/images/wood/wood-78.png"
+            pdf="/pdf/wood/wood-78.pdf"
+          />
 
-<ProductCard
-  title="WOOD 92"
-  image="/images/wood/wood-92.png"
-  pdf="/pdf/wood/wood-92.pdf"
-/>
-
-<ProductCard
-  title="WOOD 78"
-  image="/images/wood/wood-78.png"
-  pdf="/pdf/wood/wood-78.pdf"
-/>
-
-<ProductCard
-  title="WOOD 92"
-  image="/images/wood/wood-92.png"
-  pdf="/pdf/wood/wood-92.pdf"
-/>
+          <ProductCard
+            title="WOOD 92"
+            image="/images/wood/wood-92.png"
+            pdf="/pdf/wood/wood-92.pdf"
+          />
 
         </div>
 

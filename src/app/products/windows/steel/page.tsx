@@ -1,6 +1,11 @@
+// app/products/windows/steel/page.tsx
+
 import ProductCard from "../../../../components/ProductCard";
+import { getWindowSystems } from "../../../../data/products/doorSystems";
 
 export default function SteelPage() {
+  const products = getWindowSystems("steel");
+
   return (
     <main className="min-h-screen bg-[#002B6B] text-white">
       <div className="max-w-7xl mx-auto px-8 py-16">
@@ -14,32 +19,17 @@ export default function SteelPage() {
         </p>
 
         <div className="grid md:grid-cols-2 gap-10">
-
-          <ProductCard
-            title="PRESTO"
-            image="/images/steel/presto.png"
-            pdf="/pdf/steel/presto.pdf"
-          />
-
-          <ProductCard
-            title="UNICO"
-            image="/images/steel/unico.png"
-            pdf="/pdf/steel/unico.pdf"
-          />
-
-          <ProductCard
-            title="UNICO XS"
-            image="/images/steel/unico-xs.png"
-            pdf="/pdf/steel/unico-xs.pdf"
-          />
-
-          <ProductCard
-            title="UNICO XS CASEMENT"
-            image="/images/steel/unico-xs-casement.png"
-            pdf="/pdf/steel/unico-xs-casement.pdf"
-          />
-
+          {products.map((system) => (
+            <ProductCard
+              key={system.id}
+              title={system.name}
+              image={system.image}
+              pdf={system.pdf}
+              href={`/products/systems/steel/${system.id}`}
+            />
+          ))}
         </div>
+
       </div>
     </main>
   );

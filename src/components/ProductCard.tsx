@@ -1,14 +1,35 @@
+import Link from "next/link";
+
 type ProductCardProps = {
   title: string;
   image: string;
   pdf: string;
+  /** Optional: if given, the image+title become a link to the technical
+   * detail page (e.g. /products/systems/aluminium/mb-45). The PDF button
+   * still opens the PDF directly either way. Omit to keep old behaviour. */
+  href?: string;
 };
 
 export default function ProductCard({
   title,
   image,
   pdf,
+  href,
 }: ProductCardProps) {
+  const imageBlock = (
+    <img
+      src={image}
+      alt={title}
+      className="w-full h-80 object-contain"
+    />
+  );
+
+  const titleBlock = (
+    <h3 className="text-black text-2xl font-bold mb-4">
+      {title}
+    </h3>
+  );
+
   return (
     <div
       className="
@@ -22,16 +43,22 @@ export default function ProductCard({
         hover:-translate-y-1
       "
     >
-      <img
-        src={image}
-        alt={title}
-        className="w-full h-80 object-contain"
-      />
+      {href ? (
+        <Link href={href} className="block">
+          {imageBlock}
+        </Link>
+      ) : (
+        imageBlock
+      )}
 
       <div className="p-6">
-        <h3 className="text-black text-2xl font-bold mb-4">
-          {title}
-        </h3>
+        {href ? (
+          <Link href={href} className="hover:underline">
+            {titleBlock}
+          </Link>
+        ) : (
+          titleBlock
+        )}
 
         <a
           href={pdf}

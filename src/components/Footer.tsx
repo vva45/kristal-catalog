@@ -99,7 +99,7 @@ export default function Footer() {
               <p>Hechingen, Germany</p>
 
               <p>
-                info@kristallfenster.de
+                info@kristall-fenster.de
               </p>
 
               <p>

@@ -126,9 +126,9 @@ export default function PVCDoorsPage() {
           />
 
           <ProductCard
-            title="EVOLUTIONDRIVE 92"
-            image="/images/pvc/evolutiondrive-92.png"
-            pdf="/pdf/pvc/evolutiondrive-92.pdf"
+            title="EVOLUTIONDRIVE 82"
+            image="/images/pvc/evolutiondrive-82.png"
+            pdf="/pdf/pvc/evolutiondrive-82.pdf"
           />
 
           <ProductCard
