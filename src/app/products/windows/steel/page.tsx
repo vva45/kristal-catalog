@@ -1,6 +1,7 @@
-// app/products/windows/steel/page.tsx
+// src/app/products/windows/steel/page.tsx
 
 import ProductCard from "../../../../components/ProductCard";
+import CategoryHero from "../../../../components/CategoryHero";
 import { getWindowSystems } from "../../../../data/products/doorSystems";
 
 export default function SteelPage() {
@@ -8,16 +9,13 @@ export default function SteelPage() {
 
   return (
     <main className="min-h-screen bg-[#002B6B] text-white">
-      <div className="max-w-7xl mx-auto px-8 py-16">
+      <CategoryHero
+        eyebrow="Steel Windows"
+        title="Steel"
+        description="Ultra-slim profiles with a timeless industrial look and maximum strength - ideal for heritage renovations and modern architectural glazing."
+      />
 
-        <h1 className="text-5xl font-bold mb-4">
-          Steel
-        </h1>
-
-        <p className="text-white/80 mb-12">
-          Premium steel window systems
-        </p>
-
+      <section className="max-w-7xl mx-auto px-8 py-12">
         <div className="grid md:grid-cols-2 gap-10">
           {products.map((system) => (
             <ProductCard
@@ -29,8 +27,7 @@ export default function SteelPage() {
             />
           ))}
         </div>
-
-      </div>
+      </section>
     </main>
   );
 }

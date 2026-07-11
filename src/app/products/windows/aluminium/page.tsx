@@ -1,25 +1,19 @@
-// EXAMPLE: products/windows/aluminium/page.tsx
-//
-// Same page, but data-driven: pulls from aluminium-systems.ts instead of
-// 20 hand-written <ProductCard> blocks, and each card now links to its
-// technical detail page. This is the pattern to copy for the PVC page too.
+// src/app/products/windows/aluminium/page.tsx
 
 import ProductCard from "../../../../components/ProductCard";
+import CategoryHero from "../../../../components/CategoryHero";
 import { aluminiumSystems } from "../../../../data/products/aluminium-systems";
 
 export default function AluminiumPage() {
   return (
     <main className="min-h-screen bg-[#002B6B] text-white">
-      <div className="max-w-7xl mx-auto px-8 py-16">
+      <CategoryHero
+        eyebrow="Aluminium Windows"
+        title="Aluminium"
+        description="Slim sightlines, large glazing surfaces and outstanding durability - premium aluminium window systems from Aluprof, Aliplast, Deceuninck, Cortizo and Reynaers."
+      />
 
-        <h1 className="text-5xl font-bold mb-4">
-          Aluminium
-        </h1>
-
-        <p className="text-white/80 mb-12">
-          Premium aluminium window systems
-        </p>
-
+      <section className="max-w-7xl mx-auto px-8 py-12">
         <div className="grid md:grid-cols-2 gap-10">
           {aluminiumSystems.map((system) => (
             <ProductCard
@@ -31,8 +25,7 @@ export default function AluminiumPage() {
             />
           ))}
         </div>
-
-      </div>
+      </section>
     </main>
   );
 }

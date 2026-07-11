@@ -1,10 +1,9 @@
-// app/products/windows/pvc/page.tsx
+// src/app/products/windows/pvc/page.tsx
 //
-// Replaces the 22 hand-written <ProductCard> blocks with a data-driven
-// list from pvc-systems.ts (window + window-door category only - the
-// sliding/lift-slide-only systems show on the Doors page instead).
+// Data-driven list from pvc-systems.ts (window + window-door category only).
 
 import ProductCard from "../../../../components/ProductCard";
+import CategoryHero from "../../../../components/CategoryHero";
 import { getWindowSystems } from "../../../../data/products/doorSystems";
 
 export default function PVCPage() {
@@ -12,12 +11,13 @@ export default function PVCPage() {
 
   return (
     <main className="min-h-screen bg-[#002B6B] text-white">
-      <div className="max-w-7xl mx-auto px-8 py-16">
+      <CategoryHero
+        eyebrow="PVC Windows"
+        title="PVC"
+        description="Energy-efficient, low-maintenance window systems with excellent thermal insulation - from Aluplast, Salamander, Gealan and Ekosun."
+      />
 
-        <h1 className="text-5xl font-bold mb-12">
-          PVC
-        </h1>
-
+      <section className="max-w-7xl mx-auto px-8 py-12">
         <div className="grid md:grid-cols-2 gap-10">
           {products.map((system) => (
             <ProductCard
@@ -29,8 +29,7 @@ export default function PVCPage() {
             />
           ))}
         </div>
-
-      </div>
+      </section>
     </main>
   );
 }

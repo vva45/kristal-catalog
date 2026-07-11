@@ -1,187 +1,76 @@
-import ProductCard from "../../../../components/ProductCard";
+// src/app/products/doors/pvc/page.tsx
+//
+// Premium layout (hero + intro + features + grid + banner), matching the
+// aluminium doors page. Product grid is data-driven from pvc-systems.ts,
+// which also removes the old hand-written 27-card list.
+
+import DoorHero from "../../../../components/doors/DoorHero";
+import DoorIntro from "../../../../components/doors/DoorIntro";
+import DoorFeatures from "../../../../components/doors/DoorFeatures";
+import DoorProductGrid from "../../../../components/doors/DoorProductGrid";
+import DoorBanner from "../../../../components/doors/DoorBanner";
+import { getDoorSystems } from "../../../../data/products/doorSystems";
 
 export default function PVCDoorsPage() {
+  const products = getDoorSystems("pvc");
+
   return (
     <main className="min-h-screen bg-[#002B6B] text-white">
-      <div className="max-w-7xl mx-auto px-8 py-16">
+      <DoorHero
+        eyebrow="Premium Installation - Germany"
+        title="PVC Doors"
+        description="Energy-efficient entrance, sliding and lift-slide door systems built on Aluplast, Salamander, Gealan and Ekosun profiles."
+        image="/images/hero-villa.png"
+      />
 
-        <h1 className="text-5xl font-bold mb-12">
-          PVC Doors
-        </h1>
+      <DoorIntro
+        title="Comfort, efficiency and everyday value"
+        paragraphs={[
+          "PVC door systems deliver excellent thermal insulation with very low maintenance, making them the go-to choice for modern homes and renovation projects alike.",
+          "From the compact Ideal 4000 to the passive-house-grade Energeto 8000 and the wide-opening HST 85 lift-slide door, the range covers every budget and opening type.",
+        ]}
+        image="/images/pvc-material.png"
+        ctaLabel="Explore colours & finishes"
+        ctaHref="/colors"
+      />
 
-        <div className="grid md:grid-cols-2 gap-10">
+      <DoorFeatures
+        eyebrow="Why PVC"
+        title="Efficient, quiet and low-maintenance"
+        features={[
+          {
+            icon: "🌡️",
+            title: "Thermal insulation",
+            description:
+              "Multi-chamber profiles reach Uw values as low as 0.72 W/m²K on the Energeto 8000.",
+          },
+          {
+            icon: "🧼",
+            title: "Low maintenance",
+            description:
+              "Weatherproof surfaces that never need painting - just an occasional wipe-down.",
+          },
+          {
+            icon: "🎨",
+            title: "Colours & finishes",
+            description:
+              "A wide range of solid colours and wood-effect foils to match any façade.",
+          },
+        ]}
+      />
 
-          <ProductCard
-            title="IDEAL 70"
-            image="/images/pvc/ideal-70.png"
-            pdf="/pdf/pvc/ideal-70.pdf"
-          />
+      <DoorProductGrid
+        title="PVC Door Systems"
+        description="Technical data sheet and full manufacturer PDF for every system."
+        products={products}
+      />
 
-          <ProductCard
-            title="IDEAL 4000"
-            image="/images/pvc/ideal4000.png"
-            pdf="/pdf/pvc/ideal-4000.pdf"
-          />
-
-          <ProductCard
-            title="IDEAL 4000 NEW"
-            image="/images/pvc/ideal-4000new.png"
-            pdf="/pdf/pvc/ideal-4000-new.pdf"
-          />
-
-          <ProductCard
-            title="IDEAL 4000 CASEMENT"
-            image="/images/pvc/ideal4000-casement.png"
-            pdf="/pdf/pvc/ideal-4000-casement.pdf"
-          />
-
-          <ProductCard
-            title="IDEAL 5000"
-            image="/images/pvc/ideal5000.png"
-            pdf="/pdf/pvc/ideal-5000.pdf"
-          />
-
-          <ProductCard
-            title="IDEAL 7000 NL"
-            image="/images/pvc/ideal-7000-nl.png"
-            pdf="/pdf/pvc/ideal-7000-nl.pdf"
-          />
-
-          <ProductCard
-            title="IDEAL 7000 NEW"
-            image="/images/pvc/ideal-7000new.png"
-            pdf="/pdf/pvc/ideal-7000-new.pdf"
-          />
-
-          <ProductCard
-            title="IDEAL 8000"
-            image="/images/pvc/ideal-8000.png"
-            pdf="/pdf/pvc/ideal-8000.pdf"
-          />
-
-          <ProductCard
-            title="ENERGETO 8000"
-            image="/images/pvc/energeto-8000.png"
-            pdf="/pdf/pvc/energeto-8000.pdf"
-          />
-
-          <ProductCard
-            title="IDEAL NEO AD"
-            image="/images/pvc/ideal-neo-ad.png"
-            pdf="/pdf/pvc/ideal-neo-ad.pdf"
-          />
-
-          <ProductCard
-            title="NORDLINE"
-            image="/images/pvc/NORDLINE.png"
-            pdf="/pdf/pvc/nordline.pdf"
-          />
-
-          <ProductCard
-            title="MONOBLOCK"
-            image="/images/pvc/MONOBLOCK.png"
-            pdf="/pdf/pvc/monoblock.pdf"
-          />
-
-          <ProductCard
-            title="EASY SLIDE"
-            image="/images/pvc/easy-slide.png"
-            pdf="/pdf/pvc/easy-slide.pdf"
-          />
-
-          <ProductCard
-            title="MULTI SLIDE"
-            image="/images/pvc/multi-slide.png"
-            pdf="/pdf/pvc/multi-slide.pdf"
-          />
-
-          <ProductCard
-            title="SMART SLIDE"
-            image="/images/pvc/smart-slide.png"
-            pdf="/pdf/pvc/smart-slide.pdf"
-          />
-
-          <ProductCard
-            title="HST 85"
-            image="/images/pvc/hst-85.png"
-            pdf="/pdf/pvc/hst-85.pdf"
-          />
-
-          <ProductCard
-            title="GREENEVOLUTION FLEX"
-            image="/images/pvc/green-evolution-flex.png"
-            pdf="/pdf/pvc/greenevolution-flex.pdf"
-          />
-
-          <ProductCard
-            title="BLUE EVOLUTION 82"
-            image="/images/pvc/blue-evolution-82.png"
-            pdf="/pdf/pvc/bluevolution-82.pdf"
-          />
-
-          <ProductCard
-            title="BLUE EVOLUTION 92"
-            image="/images/pvc/blue-evolution-92.png"
-            pdf="/pdf/pvc/bluevolution-92.pdf"
-          />
-
-          <ProductCard
-            title="EVOLUTIONDRIVE 82"
-            image="/images/pvc/evolutiondrive-82.png"
-            pdf="/pdf/pvc/evolutiondrive-82.pdf"
-          />
-
-          <ProductCard
-            title="EKOSUN 70"
-            image="/images/pvc/ekosun70.png"
-            pdf="/pdf/pvc/ekosun70.pdf"
-          />
-
-          <ProductCard
-            title="EKOSUN 6"
-            image="/images/pvc/ekosun6.png"
-            pdf="/pdf/pvc/ekosun6.pdf"
-          />
-
-          <ProductCard
-            title="EKOSUN 6 NL"
-            image="/images/pvc/ekosun-6nl.png"
-            pdf="/pdf/pvc/ekosun6-nl.pdf"
-          />
-
-          <ProductCard
-            title="EKOSUN 7"
-            image="/images/pvc/ekosun7.png"
-            pdf="/pdf/pvc/ekosun7.pdf"
-          />
-
-          <ProductCard
-            title="EKOSUN HST"
-            image="/images/pvc/ekosun-hst.png"
-            pdf="/pdf/pvc/ekosun-hst.pdf"
-          />
-
-          <ProductCard
-            title="GEALAN S8000"
-            image="/images/pvc/s-8000.png"
-            pdf="/pdf/pvc/s-8000.pdf"
-          />
-
-          <ProductCard
-            title="GEALAN S9000"
-            image="/images/pvc/s-9000.png"
-            pdf="/pdf/pvc/s-9000.pdf"
-          />
-
-          <ProductCard
-            title="GEALAN HST"
-            image="/images/pvc/gealan-hst.png"
-            pdf="/pdf/pvc/gealan-hst.pdf"
-          />
-
-        </div>
-
-      </div>
+      <DoorBanner
+        title="Not sure which system fits your project?"
+        description="Send us your dimensions and we'll recommend the right door system."
+        ctaLabel="Contact Us"
+        ctaHref="/contact"
+      />
     </main>
   );
 }
