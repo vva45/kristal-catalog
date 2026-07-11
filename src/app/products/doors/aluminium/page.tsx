@@ -19,7 +19,7 @@ export default function AluminiumDoorsPage() {
         eyebrow="Premium Installation - Germany"
         title="Aluminium Doors"
         description="Entrance doors, lift-slide terrace doors and folding systems built on Aluprof, Aliplast, Deceuninck, Cortizo and Reynaers profiles."
-        image="/images/hero-aluminium-doors.png"
+        image="/images/hero-villa.png"
       />
 
       <DoorIntro
