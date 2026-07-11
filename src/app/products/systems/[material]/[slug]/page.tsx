@@ -43,13 +43,14 @@ const categoryLabels: Record<string, string> = {
   "fire-resistant": "Fire-resistant system",
 };
 
-export default function ProductSystemPage({
+export default async function ProductSystemPage({
   params,
 }: {
-  params: { material: string; slug: string };
+  params: Promise<{ material: string; slug: string }>;
 }) {
-  const systems = systemsByMaterial[params.material];
-  const product = systems?.find((s) => s.id === params.slug);
+  const { material, slug } = await params;
+  const systems = systemsByMaterial[material];
+  const product = systems?.find((s) => s.id === slug);
 
   if (!product) return notFound();
 
@@ -58,10 +59,10 @@ export default function ProductSystemPage({
       <div className="max-w-5xl mx-auto px-8 py-16">
 
         <Link
-          href={`/products/windows/${params.material}`}
+          href={`/products/windows/${material}`}
           className="text-white/60 hover:text-white text-sm mb-8 inline-block"
         >
-          ← Back to {params.material.toUpperCase()}
+          ← Back to {material.toUpperCase()}
         </Link>
 
         <div className="flex flex-wrap items-center gap-3 mb-4">
