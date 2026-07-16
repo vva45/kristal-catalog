@@ -3,9 +3,13 @@
 import DoorHero from "../../../components/doors/DoorHero";
 import DoorIntro from "../../../components/doors/DoorIntro";
 import DoorFeatures from "../../../components/doors/DoorFeatures";
+import DoorProductGrid from "../../../components/doors/DoorProductGrid";
 import DoorBanner from "../../../components/doors/DoorBanner";
+import { getGarageDoorSystems } from "../../../data/products/doorSystems";
 
 export default function GarageDoorsPage() {
+  const steelProducts = getGarageDoorSystems("steel");
+
   return (
     <main className="min-h-screen bg-[#002B6B] text-white">
       <DoorHero
@@ -50,6 +54,14 @@ export default function GarageDoorsPage() {
           },
         ]}
       />
+
+      {steelProducts.length > 0 && (
+        <DoorProductGrid
+          title="Steel Garage Doors"
+          description="Swing-opening steel garage doors with insulated segmented panels."
+          products={steelProducts}
+        />
+      )}
 
       <DoorBanner
         title="Full range coming soon"

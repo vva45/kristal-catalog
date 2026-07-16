@@ -58,3 +58,11 @@ export function getEntranceOnlySystems(
     (system) => system.category === "door" || system.category === "entrance-door"
   );
 }
+
+/** Garage doors only (swing/sectional/roller) - kept separate from
+ * getDoorSystems since garage doors have their own catalog page. */
+export function getGarageDoorSystems(
+  material: "pvc" | "aluminium" | "steel" | "wood"
+): ProductSystem[] {
+  return getSource(material).filter((system) => system.category === "garage-door");
+}

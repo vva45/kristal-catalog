@@ -23,6 +23,7 @@ export type ProductCategory =
   | "lift-slide-door" // Hebeschiebetürsystem (HST/HS)
   | "folding-door" // Falttürsystem
   | "guillotine-window" // Guillotine-System (vertical sash)
+  | "garage-door" // Schwenktor / Garagentor (swing-opening garage door)
   | "fire-resistant"; // Brandschutzsystem (EI-rated)
 
 export interface ProductSystem {

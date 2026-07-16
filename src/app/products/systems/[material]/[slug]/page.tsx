@@ -40,6 +40,7 @@ const categoryLabels: Record<string, string> = {
   "lift-slide-door": "Lift-slide door system",
   "folding-door": "Folding door system",
   "guillotine-window": "Guillotine window",
+  "garage-door": "Garage door system",
   "fire-resistant": "Fire-resistant system",
 };
 
