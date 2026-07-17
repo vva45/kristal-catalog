@@ -24,6 +24,13 @@ const collections = [
     live: true,
   },
   {
+    href: "/products/entrance-doors/roka-steel",
+    label: "Roka Steel",
+    tagline: "Interior & exterior steel door, sliding and glazing systems",
+    badge: "ROKA",
+    live: true,
+  },
+  {
     href: "#",
     label: "Roka Signature",
     tagline: "The flagship collection, 7 signature design themes",
