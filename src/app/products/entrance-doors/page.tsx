@@ -31,11 +31,11 @@ const collections = [
     live: true,
   },
   {
-    href: "#",
+    href: "/products/entrance-doors/roka-signature",
     label: "Roka Signature",
     tagline: "The flagship collection, 7 signature design themes",
     badge: "ROKA",
-    live: false,
+    live: true,
   },
   {
     href: "#",
