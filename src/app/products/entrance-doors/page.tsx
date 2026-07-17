@@ -17,11 +17,11 @@ const collections = [
     live: true,
   },
   {
-    href: "#",
+    href: "/products/entrance-doors/roka-select",
     label: "Roka Select",
     tagline: "22 designs in Wicona aluminium, 3 personalisation packages",
     badge: "ROKA",
-    live: false,
+    live: true,
   },
   {
     href: "#",
