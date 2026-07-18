@@ -38,11 +38,11 @@ const collections = [
     live: true,
   },
   {
-    href: "#",
+    href: "/products/entrance-doors/monumenta",
     label: "Monumenta",
     tagline: "Bespoke, artisan-crafted monumental doors",
     badge: "Monumenta",
-    live: false,
+    live: true,
   },
 ];
 
