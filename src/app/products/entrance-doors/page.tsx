@@ -10,6 +10,13 @@ import CategoryHero from "../../../components/CategoryHero";
 
 const collections = [
   {
+    href: "/products/entrance-doors/roka-essential",
+    label: "Roka Essential",
+    tagline: "8 entry-level designs, quality at an attractive price",
+    badge: "ROKA",
+    live: true,
+  },
+  {
     href: "/products/entrance-doors/roka-function",
     label: "Roka Function",
     tagline: "10 entry-level designs, ROKA Standard profile system",
