@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { PartnerDoorModel } from "../data/partners/types";
 
 interface PartnerDoorCardProps {
@@ -13,12 +12,9 @@ interface PartnerDoorCardProps {
 export default function PartnerDoorCard({ model }: PartnerDoorCardProps) {
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-lg">
-      <Image
+      <img
         src={model.image}
         alt={model.code}
-        width={640}
-        height={512}
-        sizes="(min-width: 768px) 50vw, 100vw"
         className="w-full h-80 object-cover"
       />
 
