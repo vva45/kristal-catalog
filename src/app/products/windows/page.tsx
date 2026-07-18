@@ -2,6 +2,7 @@
 //
 // Windows landing page: premium intro + the four material banners.
 
+import Image from "next/image";
 import Link from "next/link";
 import CategoryHero from "../../../components/CategoryHero";
 
@@ -48,9 +49,11 @@ export default function WindowsPage() {
               href={material.href}
               className="group relative overflow-hidden rounded-2xl h-[360px] block"
             >
-              <img
+              <Image
                 src={material.image}
                 alt={material.label}
+                fill
+                sizes="(min-width: 1280px) 1280px, 100vw"
                 className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
               />
 

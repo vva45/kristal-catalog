@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 type ProductCardProps = {
@@ -17,9 +18,12 @@ export default function ProductCard({
   href,
 }: ProductCardProps) {
   const imageBlock = (
-    <img
+    <Image
       src={image}
       alt={title}
+      width={640}
+      height={512}
+      sizes="(min-width: 768px) 50vw, 100vw"
       className="w-full h-80 object-contain"
     />
   );

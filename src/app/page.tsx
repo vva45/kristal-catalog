@@ -74,6 +74,12 @@ export default function Home() {
   />
 
   <CategoryCard
+    title="Entrance Doors"
+    image="/categories/entrance-doors.jpg"
+    href="/products/entrance-doors"
+  />
+
+  <CategoryCard
     title="Roller Shutters"
     image="/categories/roller-shutters.png"
     href="/products/roller-shutters"

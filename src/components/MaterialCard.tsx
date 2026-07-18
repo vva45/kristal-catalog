@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 type MaterialCardProps = {
@@ -14,9 +15,12 @@ export default function MaterialCard({
   return (
     <Link href={href}>
       <div className="bg-white rounded-xl overflow-hidden hover:scale-[1.02] transition">
-        <img
+        <Image
           src={image}
           alt={title}
+          width={640}
+          height={400}
+          sizes="(min-width: 768px) 50vw, 100vw"
           className="w-full h-[250px] object-cover"
         />
 

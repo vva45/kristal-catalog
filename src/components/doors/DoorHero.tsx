@@ -1,8 +1,12 @@
+import Image from "next/image";
+
 interface DoorHeroProps {
   eyebrow: string;
   title: string;
   description: string;
   image: string;
+  ctaLabel?: string;
+  ctaHref?: string;
 }
 
 export default function DoorHero({
@@ -10,15 +14,20 @@ export default function DoorHero({
   title,
   description,
   image,
+  ctaLabel = "Explore Systems",
+  ctaHref = "#systems",
 }: DoorHeroProps) {
   return (
     <section className="relative pt-24 h-[calc(100vh-96px)]">
     
       {/* Background Image */}
 
-      <img
+      <Image
         src={image}
         alt={title}
+        fill
+        priority
+        sizes="100vw"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
@@ -60,10 +69,10 @@ export default function DoorHero({
           </p>
 
           <a
-            href="#systems"
+            href={ctaHref}
             className="inline-flex items-center gap-3 bg-black hover:bg-yellow-400 hover:text-black transition-all duration-300 px-8 py-4 rounded-xl font-semibold text-lg"
           >
-            Explore Systems
+            {ctaLabel}
 
             <span className="text-2xl">
               →
