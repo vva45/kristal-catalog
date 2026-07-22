@@ -10,6 +10,13 @@ import CategoryHero from "../../../components/CategoryHero";
 
 const collections = [
   {
+    href: "/products/entrance-doors/roka-essential",
+    label: "Roka Essential",
+    tagline: "8 entry-level designs, quality at an attractive price",
+    badge: "ROKA",
+    live: true,
+  },
+  {
     href: "/products/entrance-doors/roka-function",
     label: "Roka Function",
     tagline: "10 entry-level designs, ROKA Standard profile system",
@@ -31,18 +38,25 @@ const collections = [
     live: true,
   },
   {
-    href: "#",
+    href: "/products/entrance-doors/roka-signature",
     label: "Roka Signature",
     tagline: "The flagship collection, 7 signature design themes",
     badge: "ROKA",
-    live: false,
+    live: true,
   },
   {
-    href: "#",
+    href: "/products/entrance-doors/monumenta",
     label: "Monumenta",
     tagline: "Bespoke, artisan-crafted monumental doors",
     badge: "Monumenta",
-    live: false,
+    live: true,
+  },
+  {
+    href: "/products/entrance-doors/drutex-dart",
+    label: "Drutex D-ART Line",
+    tagline: "4 design themes - Classic, Elegance, Modern, Orient",
+    badge: "Drutex",
+    live: true,
   },
 ];
 
@@ -52,7 +66,7 @@ export default function EntranceDoorsPage() {
       <CategoryHero
         eyebrow="Entrance Doors"
         title="Entrance Doors"
-        description="A curated selection from specialist partner brands ROKA and Monumenta - see a few examples here, then explore each brand's full range and get support directly from them."
+        description="A curated selection from specialist partner brands ROKA, Monumenta and Drutex - see a few examples here, then explore each brand's full range and get support directly from them."
       />
 
       <section className="max-w-7xl mx-auto px-8 py-12">
