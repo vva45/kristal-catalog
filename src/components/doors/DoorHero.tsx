@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface DoorHeroProps {
   eyebrow: string;
   title: string;
@@ -20,9 +22,12 @@ export default function DoorHero({
     
       {/* Background Image */}
 
-      <img
+      <Image
         src={image}
         alt={title}
+        fill
+        priority
+        sizes="100vw"
         className="absolute inset-0 w-full h-full object-cover"
       />
 

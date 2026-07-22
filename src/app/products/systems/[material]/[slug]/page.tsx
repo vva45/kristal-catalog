@@ -10,6 +10,7 @@
 // folder structure differs (this assumes data/ and components/ sit at the
 // project root, siblings of app/).
 
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { aluminiumSystems } from "../../../../../data/products/aluminium-systems";
@@ -83,9 +84,12 @@ export default async function ProductSystemPage({
           </p>
         )}
 
-        <img
+        <Image
           src={product.image}
           alt={product.name}
+          width={1200}
+          height={720}
+          sizes="(min-width: 1024px) 1024px, 100vw"
           className="w-full h-[360px] object-contain bg-white/5 rounded-2xl mb-10"
         />
 

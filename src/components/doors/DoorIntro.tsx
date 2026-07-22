@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 interface DoorIntroProps {
@@ -22,9 +23,12 @@ export default function DoorIntro({
   return (
     <section className="max-w-7xl mx-auto px-8 py-20">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
-        <img
+        <Image
           src={image}
           alt={title}
+          width={800}
+          height={420}
+          sizes="(min-width: 1024px) 50vw, 100vw"
           className="rounded-2xl w-full h-[420px] object-cover"
         />
 

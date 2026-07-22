@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function MaterialsPage() {
@@ -19,9 +20,12 @@ export default function MaterialsPage() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
 
-          <img
+          <Image
             src="/images/pvc-material.png"
             alt="PVC Windows"
+            width={800}
+            height={320}
+            sizes="(min-width: 1024px) 50vw, 100vw"
             className="rounded-2xl w-full h-[320px] object-cover"
           />
 
@@ -55,9 +59,12 @@ export default function MaterialsPage() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
 
-          <img
+          <Image
             src="/images/aluminium-material.png"
             alt="Aluminium Windows"
+            width={800}
+            height={320}
+            sizes="(min-width: 1024px) 50vw, 100vw"
             className="rounded-2xl w-full h-[320px] object-cover"
           />
 
@@ -91,9 +98,12 @@ export default function MaterialsPage() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
 
-          <img
+          <Image
             src="/images/steel-material.png"
             alt="Steel Windows"
+            width={800}
+            height={320}
+            sizes="(min-width: 1024px) 50vw, 100vw"
             className="rounded-2xl w-full h-[320px] object-cover"
           />
 
@@ -127,9 +137,12 @@ export default function MaterialsPage() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
 
-          <img
+          <Image
             src="/images/wood-material.png"
             alt="Wood Windows"
+            width={800}
+            height={320}
+            sizes="(min-width: 1024px) 50vw, 100vw"
             className="rounded-2xl w-full h-[320px] object-cover"
           />
 
