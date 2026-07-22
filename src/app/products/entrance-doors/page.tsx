@@ -49,7 +49,14 @@ const collections = [
     label: "Monumenta",
     tagline: "Bespoke, artisan-crafted monumental doors",
     badge: "Monumenta",
-    live: false,
+    live: true,
+  },
+  {
+    href: "/products/entrance-doors/drutex-dart",
+    label: "Drutex D-ART Line",
+    tagline: "4 design themes - Classic, Elegance, Modern, Orient",
+    badge: "Drutex",
+    live: true,
   },
 ];
 
