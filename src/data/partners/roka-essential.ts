@@ -21,7 +21,7 @@ import { PartnerDoorModel, PartnerBrand } from "./types";
 export const rokaEssentialBrand: PartnerBrand = {
   name: "ROKA Essential",
   officialSite: "https://rokadoors.com",
-  note: "Browse the complete Essential catalogue below, then get in touch with us for pricing, samples and installation.",
+  note: { en: "Browse the complete Essential catalogue below, then get in touch with us for pricing, samples and installation.", de: "Browse the complete Essential catalogue below, then get in touch with us for pricing, samples and installation." },
 };
 
 export const rokaEssentialDoors: PartnerDoorModel[] = [
@@ -46,7 +46,7 @@ export const rokaEssentialDoors: PartnerDoorModel[] = [
     surface: "RAL 9007 grey aluminium, matt or fine-structure",
     uwValue: "Ud 0.81 W/m²K",
     profileSystem: "ROKA Exclusive",
-    type: "Flush-inset Alunox application",
+    type: { en: "Flush-inset Alunox application", de: "Flush-inset Alunox application" },
     image: "/images/entrance-doors/roka-essential-4.jpg",
     catalogSource: "ROKA_Essential_DE.pdf, p.11",
   },
@@ -58,7 +58,7 @@ export const rokaEssentialDoors: PartnerDoorModel[] = [
     surface: "RAL 9005 black, matt or fine-structure",
     uwValue: "Ud 0.79 W/m²K",
     profileSystem: "ROKA Exclusive",
-    type: "5mm relief-groove surface texture",
+    type: { en: "5mm relief-groove surface texture", de: "5mm relief-groove surface texture" },
     image: "/images/entrance-doors/roka-essential-8.jpg",
     catalogSource: "ROKA_Essential_DE.pdf, p.13",
   },

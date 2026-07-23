@@ -70,7 +70,7 @@ export default function RokaSelectPage() {
       <PartnerBanner
         brand={rokaSelectBrand}
         catalogPdf="/pdf/entrance-doors/roka-select-catalogue.pdf"
-        catalogLabel="Download Select Catalogue (PDF)"
+        catalogName="Select"
       />
     </main>
   );

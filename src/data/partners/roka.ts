@@ -16,7 +16,7 @@ import { PartnerDoorModel, PartnerBrand } from "./types";
 export const rokaBrand: PartnerBrand = {
   name: "ROKA",
   officialSite: "https://rokadoors.com",
-  note: "Browse the complete Function catalogue below, then get in touch with us for pricing, samples and installation.",
+  note: { en: "Browse the complete Function catalogue below, then get in touch with us for pricing, samples and installation.", de: "Browse the complete Function catalogue below, then get in touch with us for pricing, samples and installation." },
 };
 
 export const rokaFunctionDoors: PartnerDoorModel[] = [
@@ -52,7 +52,7 @@ export const rokaFunctionDoors: PartnerDoorModel[] = [
     surface: "RAL 9007 grey aluminium, matt or fine-structure",
     uwValue: "Ud 1.3 W/m²K",
     profileSystem: "ROKA Standard 65 mm",
-    type: "Secondary entrance door",
+    type: { en: "Secondary entrance door", de: "Secondary entrance door" },
     image: "/images/entrance-doors/roka-function-10.jpg",
     catalogSource: "Roka-Function.pdf, p.14",
   },

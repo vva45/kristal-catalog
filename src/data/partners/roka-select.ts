@@ -24,7 +24,7 @@ import { PartnerDoorModel, PartnerBrand } from "./types";
 export const rokaSelectBrand: PartnerBrand = {
   name: "ROKA Select",
   officialSite: "https://rokadoors.com",
-  note: "Browse the complete Select catalogue below, then get in touch with us for pricing, samples and installation.",
+  note: { en: "Browse the complete Select catalogue below, then get in touch with us for pricing, samples and installation.", de: "Browse the complete Select catalogue below, then get in touch with us for pricing, samples and installation." },
 };
 
 export const rokaSelectDoors: PartnerDoorModel[] = [
@@ -60,7 +60,7 @@ export const rokaSelectDoors: PartnerDoorModel[] = [
     surface: "Real wood veneer - Country Oak",
     uwValue: "Ud 0.88 W/m²K",
     profileSystem: "Wicona ROKA Exclusive",
-    type: "Real wood veneer (Altholz) range",
+    type: { en: "Real wood veneer (Altholz) range", de: "Real wood veneer (Altholz) range" },
     image: "/images/entrance-doors/roka-select-13.jpg",
     catalogSource: "ROKA_Select_DE.pdf, p.30 (Altholz range)",
   },
@@ -72,7 +72,7 @@ export const rokaSelectDoors: PartnerDoorModel[] = [
     surface: "Real wood veneer - Dark Oak",
     uwValue: "Ud 0.72 W/m²K",
     profileSystem: "Wicona ROKA Exclusive",
-    type: "Real wood veneer (Altholz) range",
+    type: { en: "Real wood veneer (Altholz) range", de: "Real wood veneer (Altholz) range" },
     image: "/images/entrance-doors/roka-select-15.jpg",
     catalogSource: "ROKA_Select_DE.pdf, p.30 (Altholz range)",
   },
@@ -84,7 +84,7 @@ export const rokaSelectDoors: PartnerDoorModel[] = [
     surface: "Ceramic - Ossido Nero",
     uwValue: "Ud 0.88 W/m²K",
     profileSystem: "Wicona ROKA Exclusive",
-    type: "Ceramic surface range",
+    type: { en: "Ceramic surface range", de: "Ceramic surface range" },
     image: "/images/entrance-doors/roka-select-19.jpg",
     catalogSource: "ROKA_Select_DE.pdf, p.34 (ceramic range)",
   },
@@ -96,7 +96,7 @@ export const rokaSelectDoors: PartnerDoorModel[] = [
     surface: "Ceramic - Pietra Di Savoia Griga Bocciardato (new)",
     uwValue: "Ud 0.82 W/m²K",
     profileSystem: "Wicona ROKA Exclusive",
-    type: "Ceramic surface range",
+    type: { en: "Ceramic surface range", de: "Ceramic surface range" },
     image: "/images/entrance-doors/roka-select-22.jpg",
     catalogSource: "ROKA_Select_DE.pdf, p.34 (ceramic range, marked NEU/new)",
   },

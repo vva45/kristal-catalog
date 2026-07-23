@@ -70,7 +70,7 @@ export default function RokaEssentialPage() {
       <PartnerBanner
         brand={rokaEssentialBrand}
         catalogPdf="/pdf/entrance-doors/roka-essential-catalogue.pdf"
-        catalogLabel="Download Essential Catalogue (PDF)"
+        catalogName="Essential"
       />
     </main>
   );

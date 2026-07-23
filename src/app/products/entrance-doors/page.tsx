@@ -17,6 +17,13 @@ const collections = [
     live: true,
   },
   {
+    href: "/products/entrance-doors/despiro",
+    label: "Despiro",
+    tagline: "Premium aluminium collection - 48 designs, Despiro & Retro Line",
+    badge: "Eko-Okna",
+    live: true,
+  },
+  {
     href: "/products/entrance-doors/roka-essential",
     label: "Roka Essential",
     tagline: "8 entry-level designs, quality at an attractive price",

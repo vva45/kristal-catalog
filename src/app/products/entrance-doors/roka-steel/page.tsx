@@ -70,7 +70,7 @@ export default function RokaSteelPage() {
       <PartnerBanner
         brand={rokaSteelBrand}
         catalogPdf="/pdf/entrance-doors/roka-steel-catalogue.pdf"
-        catalogLabel="Download Steel Catalogue (PDF)"
+        catalogName="Steel"
       />
     </main>
   );

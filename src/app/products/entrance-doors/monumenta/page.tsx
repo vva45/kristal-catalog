@@ -70,7 +70,7 @@ export default function MonumentaPage() {
       <PartnerBanner
         brand={monumentaBrand}
         catalogPdf="/pdf/entrance-doors/monumenta-catalogue.pdf"
-        catalogLabel="Download Monumenta Catalogue (PDF)"
+        catalogName="Monumenta"
       />
     </main>
   );

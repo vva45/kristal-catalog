@@ -70,7 +70,7 @@ export default function RokaSignaturePage() {
       <PartnerBanner
         brand={rokaSignatureBrand}
         catalogPdf="/pdf/entrance-doors/roka-signature-catalogue.pdf"
-        catalogLabel="Download Signature Catalogue (PDF)"
+        catalogName="Signature"
       />
     </main>
   );

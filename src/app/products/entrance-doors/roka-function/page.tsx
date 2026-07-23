@@ -70,7 +70,7 @@ export default function RokaFunctionPage() {
       <PartnerBanner
         brand={rokaBrand}
         catalogPdf="/pdf/entrance-doors/roka-function-catalogue.pdf"
-        catalogLabel="Download Function Catalogue (PDF)"
+        catalogName="Function"
       />
     </main>
   );

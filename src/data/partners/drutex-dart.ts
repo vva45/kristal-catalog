@@ -20,7 +20,7 @@ import { PartnerDoorModel, PartnerBrand } from "./types";
 export const drutexDartBrand: PartnerBrand = {
   name: "Drutex D-ART Line",
   officialSite: "https://www.drutex.de",
-  note: "Browse the complete D-ART Line catalogue below, then get in touch with us for pricing, samples and installation.",
+  note: { en: "Browse the complete D-ART Line catalogue below, then get in touch with us for pricing, samples and installation.", de: "Browse the complete D-ART Line catalogue below, then get in touch with us for pricing, samples and installation." },
 };
 
 export const drutexDartDoors: PartnerDoorModel[] = [
@@ -30,7 +30,7 @@ export const drutexDartDoors: PartnerDoorModel[] = [
     collection: "Drutex D-ART Line",
     handle: "Madeleine Antique Satin Gold",
     surface: "Anodic Graphite / Anodic Bronze",
-    type: "Classic theme - timeless elegance for classic, modern-classic, Parisian or Hampton-style architecture",
+    type: { en: "Classic theme - timeless elegance for classic, modern-classic, Parisian or Hampton-style architecture", de: "Classic theme - timeless elegance for classic, modern-classic, Parisian or Hampton-style architecture" },
     image: "/images/entrance-doors/drutex-dart-classic.jpg",
     catalogSource: "artline.pdf (Drutex D-ART Line), p.4-5 (Classic theme, p.4-9)",
   },
@@ -40,7 +40,7 @@ export const drutexDartDoors: PartnerDoorModel[] = [
     collection: "Drutex D-ART Line",
     handle: "Gold Splendour",
     surface: "Anodic Plum / Gold Splendour",
-    type: "Elegance theme - subtle lines and refined details for modern-classic, art-deco or quiet-luxury style",
+    type: { en: "Elegance theme - subtle lines and refined details for modern-classic, art-deco or quiet-luxury style", de: "Elegance theme - subtle lines and refined details for modern-classic, art-deco or quiet-luxury style" },
     image: "/images/entrance-doors/drutex-dart-elegance.jpg",
     catalogSource: "artline.pdf (Drutex D-ART Line), p.10-11 (Elegance theme, p.10-17)",
   },
@@ -50,7 +50,7 @@ export const drutexDartDoors: PartnerDoorModel[] = [
     collection: "Drutex D-ART Line",
     handle: "Anodic Bronze mit Maraqina",
     surface: "Metallic Cream",
-    type: "Modern theme - clear lines and bold formats for contemporary, minimalist or industrial architecture",
+    type: { en: "Modern theme - clear lines and bold formats for contemporary, minimalist or industrial architecture", de: "Modern theme - clear lines and bold formats for contemporary, minimalist or industrial architecture" },
     image: "/images/entrance-doors/drutex-dart-modern.jpg",
     catalogSource: "artline.pdf (Drutex D-ART Line), p.20-21 (Modern theme, p.14-31)",
   },
@@ -60,7 +60,7 @@ export const drutexDartDoors: PartnerDoorModel[] = [
     collection: "Drutex D-ART Line",
     handle: "Metallic Night mit Frappucino",
     surface: "Metallic Night / Anodic Bronze",
-    type: "Orient theme - light, rhythm and geometric motifs for Japandi, Wabi-Sabi and modern-zen interiors",
+    type: { en: "Orient theme - light, rhythm and geometric motifs for Japandi, Wabi-Sabi and modern-zen interiors", de: "Orient theme - light, rhythm and geometric motifs for Japandi, Wabi-Sabi and modern-zen interiors" },
     image: "/images/entrance-doors/drutex-dart-orient.jpg",
     catalogSource: "artline.pdf (Drutex D-ART Line), p.32-33 (Orient theme, p.32-43)",
   },
