@@ -9,6 +9,7 @@
 import DoorHero from "../../../../components/doors/DoorHero";
 import DoorIntro from "../../../../components/doors/DoorIntro";
 import DoorFeatures from "../../../../components/doors/DoorFeatures";
+import DoorBanner from "../../../../components/doors/DoorBanner";
 import EkoPanelGrid from "../../../../components/doors/EkoPanelGrid";
 import SectionTitle from "../../../../components/cards/SectionTitle";
 import {
@@ -187,6 +188,13 @@ export default function EkoDoorPanelsPage() {
             description: `${generalDoorHardware.accessControl.join(", ")}, plus peephole and mail slot options.`,
           },
         ]}
+      />
+
+      <DoorBanner
+        title="Not sure which panel fits your project?"
+        description="Send us your opening dimensions and material preference and we'll help you pick the right Eko panel design."
+        ctaLabel="Contact Us"
+        ctaHref="/contact"
       />
     </main>
   );

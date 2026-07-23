@@ -30,6 +30,7 @@ const DOOR_CATEGORIES = new Set<ProductCategory>([
 const WINDOW_CATEGORIES = new Set<ProductCategory>([
   "window",
   "window-door",
+  "guillotine-window",
 ]);
 
 /** Everything that belongs on a Doors listing page (pure door systems

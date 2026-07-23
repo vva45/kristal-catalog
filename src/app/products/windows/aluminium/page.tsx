@@ -2,9 +2,11 @@
 
 import ProductCard from "../../../../components/ProductCard";
 import CategoryHero from "../../../../components/CategoryHero";
-import { aluminiumSystems } from "../../../../data/products/aluminium-systems";
+import { getWindowSystems } from "../../../../data/products/doorSystems";
 
 export default function AluminiumPage() {
+  const products = getWindowSystems("aluminium");
+
   return (
     <main className="min-h-screen bg-[#002B6B] text-white">
       <CategoryHero
@@ -15,7 +17,7 @@ export default function AluminiumPage() {
 
       <section className="max-w-7xl mx-auto px-8 py-12">
         <div className="grid md:grid-cols-2 gap-10">
-          {aluminiumSystems.map((system) => (
+          {products.map((system) => (
             <ProductCard
               key={system.id}
               title={system.name}

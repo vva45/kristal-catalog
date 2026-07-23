@@ -738,7 +738,7 @@ export const aluminiumSystems: ProductSystem[] = [
     material: "aluminium",
     manufacturer: "Reynaers",
     category: "window",
-    image: "/images/aluminium/slimline-38.png",
+    image: "/images/aluminium/slim-line-38.png",
     pdf: "/pdf/aluminium/slimline-38.pdf",
     variants: ["Classic", "Ferro", "Cubic"],
     specs: [

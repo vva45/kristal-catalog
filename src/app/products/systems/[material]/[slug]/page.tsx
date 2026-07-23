@@ -45,6 +45,15 @@ const categoryLabels: Record<string, string> = {
   "fire-resistant": "Fire-resistant system",
 };
 
+const DOOR_ONLY_CATEGORIES = new Set([
+  "door",
+  "entrance-door",
+  "sliding-door",
+  "lift-slide-door",
+  "folding-door",
+  "fire-resistant",
+]);
+
 export default async function ProductSystemPage({
   params,
 }: {
@@ -56,15 +65,25 @@ export default async function ProductSystemPage({
 
   if (!product) return notFound();
 
+  const backHref =
+    product.category === "garage-door"
+      ? "/products/garage-doors"
+      : DOOR_ONLY_CATEGORIES.has(product.category)
+      ? `/products/doors/${material}`
+      : `/products/windows/${material}`;
+
+  const backLabel =
+    product.category === "garage-door" ? "Garage Doors" : material.toUpperCase();
+
   return (
     <main className="min-h-screen bg-[#002B6B] text-white">
       <div className="max-w-5xl mx-auto px-8 py-16">
 
         <Link
-          href={`/products/windows/${material}`}
+          href={backHref}
           className="text-white/60 hover:text-white text-sm mb-8 inline-block"
         >
-          ← Back to {material.toUpperCase()}
+          ← Back to {backLabel}
         </Link>
 
         <div className="flex flex-wrap items-center gap-3 mb-4">

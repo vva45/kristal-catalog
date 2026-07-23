@@ -26,7 +26,7 @@ export default function AluminiumDoorsPage() {
         title="Strength, security and slim sightlines"
         paragraphs={[
           "Aluminium door systems combine narrow visible profiles with excellent structural strength, making them ideal for large entrance doors and expansive lift-slide terrace openings.",
-          "From the ultra-slim Cor Vision Plus lift-slide door to the Despiro entrance door collection with 38 panel designs, there is a system for every project.",
+          "From the ultra-slim Cor Vision Plus lift-slide door to the Despiro entrance door collection (see the full 48-design gallery under Entrance Doors), there is a system for every project.",
         ]}
         image="/images/aluminium-material.png"
         ctaLabel="Explore colours & finishes"

@@ -47,6 +47,20 @@ export default async function Footer() {
               </Link>
 
               <Link
+                href="/products/entrance-doors"
+                className="block hover:text-white"
+              >
+                {t(locale, "entranceDoors")}
+              </Link>
+
+              <Link
+                href="/products/garage-doors"
+                className="block hover:text-white"
+              >
+                {t(locale, "garageDoors")}
+              </Link>
+
+              <Link
                 href="/products/roller-shutters"
                 className="block hover:text-white"
               >

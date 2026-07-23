@@ -15,14 +15,14 @@ export default function GarageDoorsPage() {
       <DoorHero
         eyebrow="Premium Installation - Germany"
         title="Garage Doors"
-        description="Insulated sectional garage doors with quiet, safe operation - matched in colour and style to your windows and entrance door."
+        description="From insulated sectional doors to swing-opening steel garage doors - matched in colour and style to your windows and entrance door."
         image="/categories/garage-doors.png"
       />
 
       <DoorIntro
         title="The biggest door in your house deserves attention"
         paragraphs={[
-          "A garage door is often the largest moving element of a home. Insulated sectional panels keep the garage - and the rooms around it - warmer, while running quietly on every cycle.",
+          "A garage door is often the largest moving element of a home. Right now we offer swing-opening (Schwenktor) steel garage doors from the Unico and Presto ranges, with our full sectional door catalog coming soon.",
           "Panel designs, woodgrain foils and RAL colours can be matched to your façade, so the garage door completes the look instead of breaking it.",
         ]}
         image="/categories/garage-doors.png"
@@ -31,26 +31,26 @@ export default function GarageDoorsPage() {
       />
 
       <DoorFeatures
-        eyebrow="Why sectional doors"
-        title="Insulated, quiet and secure"
+        eyebrow="Why our garage doors"
+        title="Insulated, secure, and matched to your facade"
         features={[
           {
             icon: "🌡️",
-            title: "Insulated panels",
+            title: "Insulated construction",
             description:
-              "Foam-filled steel sections reduce heat loss - important for attached and heated garages.",
+              "Insulated steel panels reduce heat loss - important for attached and heated garages.",
           },
           {
             icon: "🔒",
-            title: "Anti-lift security",
+            title: "Secure locking",
             description:
-              "Modern locking mechanisms and guided tracks resist forced opening.",
+              "Robust multi-point locking resists forced opening.",
           },
           {
-            icon: "📱",
-            title: "Motorised comfort",
+            icon: "🎨",
+            title: "Matched design",
             description:
-              "Electric drives with remote control, and smart-home integration on request.",
+              "Colours and panel designs matched to your windows and entrance door for a consistent façade.",
           },
         ]}
       />

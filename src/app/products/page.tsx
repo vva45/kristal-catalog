@@ -20,17 +20,17 @@ export default function ProductsPage() {
 <div className="grid md:grid-cols-4 gap-6 mb-16">
 
   <div className="bg-white/10 rounded-xl p-6">
-    <div className="text-4xl font-bold">20+</div>
+    <div className="text-4xl font-bold">30+</div>
     <div className="text-white/70">PVC Systems</div>
   </div>
 
   <div className="bg-white/10 rounded-xl p-6">
-    <div className="text-4xl font-bold">15+</div>
+    <div className="text-4xl font-bold">40+</div>
     <div className="text-white/70">Aluminium Systems</div>
   </div>
 
   <div className="bg-white/10 rounded-xl p-6">
-    <div className="text-4xl font-bold">15+</div>
+    <div className="text-4xl font-bold">10+</div>
     <div className="text-white/70">Steel Systems</div>
   </div>
 
