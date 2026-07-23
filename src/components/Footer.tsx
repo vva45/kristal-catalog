@@ -1,6 +1,9 @@
 import Link from "next/link";
+import { getLocale, t } from "@/lib/i18n";
 
-export default function Footer() {
+export default async function Footer() {
+  const locale = await getLocale();
+
   return (
     <footer className="bg-gradient-to-b from-[#001f4f] to-black">
 
@@ -16,8 +19,7 @@ export default function Footer() {
             </h3>
 
             <p className="text-white/70">
-              Premium windows, doors and
-              architectural systems for modern living.
+              {t(locale, "footerDescription")}
             </p>
           </div>
 
@@ -25,8 +27,8 @@ export default function Footer() {
 
           <div>
             <h4 className="font-bold text-lg text-white mb-4">
-  Products
-</h4>
+              {t(locale, "productsTitle")}
+            </h4>
 
             <div className="space-y-2 text-white/80">
 
@@ -34,21 +36,21 @@ export default function Footer() {
                 href="/products/windows"
                 className="block hover:text-white"
               >
-                Windows
+                {t(locale, "windows")}
               </Link>
 
               <Link
                 href="/products/doors"
                 className="block hover:text-white"
               >
-                Doors
+                {t(locale, "doors")}
               </Link>
 
               <Link
                 href="/products/roller-shutters"
                 className="block hover:text-white"
               >
-                Roller Shutters
+                {t(locale, "rollerShutters")}
               </Link>
 
             </div>
@@ -57,9 +59,9 @@ export default function Footer() {
           {/* Company */}
 
           <div>
-           <h4 className="font-bold text-lg text-white mb-4">
-  Company
-</h4>
+            <h4 className="font-bold text-lg text-white mb-4">
+              {t(locale, "company")}
+            </h4>
 
             <div className="space-y-2 text-white/80">
 
@@ -67,21 +69,21 @@ export default function Footer() {
                 href="/materials"
                 className="block hover:text-white"
               >
-                Materials
+                {t(locale, "materials")}
               </Link>
 
               <Link
                 href="/colors"
                 className="block hover:text-white"
               >
-                Colours
+                {t(locale, "colours")}
               </Link>
 
               <Link
                 href="/contact"
                 className="block hover:text-white"
               >
-                Contact
+                {t(locale, "contact")}
               </Link>
 
             </div>
@@ -91,12 +93,12 @@ export default function Footer() {
 
           <div>
             <h4 className="font-bold text-lg text-white mb-4">
-  Contact
-</h4>
+              {t(locale, "contact")}
+            </h4>
 
-           <div className="space-y-2 text-white/80">
+            <div className="space-y-2 text-white/80">
 
-              <p>Hechingen, Germany</p>
+              <p>Hechingen, {locale === "de" ? "Deutschland" : "Germany"}</p>
 
               <p>
                 info@kristall-fenster.de
@@ -115,8 +117,8 @@ export default function Footer() {
 
         <div className="border-t border-white/10 mt-12 pt-8 text-white/50 text-sm">
 
-          © {new Date().getFullYear()} Kristall Fenster.
-          All rights reserved.
+          © {new Date().getFullYear()} Kristall Fenster.{" "}
+          {t(locale, "allRightsReserved")}
 
         </div>
 

@@ -5,21 +5,25 @@
 // Replaces the bare "<h1>Doors</h1>" with an eyebrow + big title + lead
 // paragraph, so those pages don't feel so empty above the banners.
 
+import { getLocale, t } from "@/lib/i18n";
+
 interface CategoryHeroProps {
   eyebrow?: string;
   title: string;
   description: string;
 }
 
-export default function CategoryHero({
-  eyebrow = "Premium Installation - Germany",
+export default async function CategoryHero({
+  eyebrow,
   title,
   description,
 }: CategoryHeroProps) {
+  const locale = await getLocale();
+
   return (
     <section className="max-w-7xl mx-auto px-8 pt-16 pb-4">
       <p className="text-yellow-400 font-bold uppercase tracking-widest text-sm mb-4">
-        {eyebrow}
+        {eyebrow ?? t(locale, "premiumInstallation")}
       </p>
 
       <h1 className="text-6xl font-bold mb-6">{title}</h1>

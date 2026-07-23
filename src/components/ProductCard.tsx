@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getLocale, t } from "@/lib/i18n";
 
 type ProductCardProps = {
   title: string;
@@ -11,12 +12,13 @@ type ProductCardProps = {
   href?: string;
 };
 
-export default function ProductCard({
+export default async function ProductCard({
   title,
   image,
   pdf,
   href,
 }: ProductCardProps) {
+  const locale = await getLocale();
   const imageBlock = (
     <Image
       src={image}
@@ -81,7 +83,7 @@ export default function ProductCard({
             hover:text-black
           "
         >
-          Technical Data
+          {t(locale, "technicalData")}
         </a>
       </div>
     </div>

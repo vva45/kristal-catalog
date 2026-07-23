@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getLocale, t } from "@/lib/i18n";
 
 interface DoorHeroProps {
   eyebrow: string;
@@ -9,14 +10,16 @@ interface DoorHeroProps {
   ctaHref?: string;
 }
 
-export default function DoorHero({
+export default async function DoorHero({
   eyebrow,
   title,
   description,
   image,
-  ctaLabel = "Explore Systems",
+  ctaLabel,
   ctaHref = "#systems",
 }: DoorHeroProps) {
+  const locale = await getLocale();
+  const resolvedCtaLabel = ctaLabel ?? t(locale, "exploreSystems");
   return (
     <section className="relative pt-24 h-[calc(100vh-96px)]">
     
@@ -72,7 +75,7 @@ export default function DoorHero({
             href={ctaHref}
             className="inline-flex items-center gap-3 bg-black hover:bg-yellow-400 hover:text-black transition-all duration-300 px-8 py-4 rounded-xl font-semibold text-lg"
           >
-            {ctaLabel}
+            {resolvedCtaLabel}
 
             <span className="text-2xl">
               →

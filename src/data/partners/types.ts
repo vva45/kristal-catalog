@@ -7,6 +7,13 @@
 // collection, credit/link to the partner's own site for the full range
 // and for inquiry support - do NOT try to replicate their entire catalog.
 
+/** UI prose that must exist in both site languages. Catalog facts
+ * (codes, RAL colours, profile names) stay single-valued as printed. */
+export interface LocalizedText {
+  en: string;
+  de: string;
+}
+
 export interface PartnerDoorModel {
   /** kebab-case, e.g. "roka-function-1" */
   id: string;
@@ -25,7 +32,7 @@ export interface PartnerDoorModel {
   uwValue?: string;
   profileSystem?: string;
   /** e.g. "Secondary entrance door" for a Nebeneingangstür variant */
-  type?: string;
+  type?: LocalizedText;
   image: string;
   catalogSource: string;
 }
@@ -36,5 +43,5 @@ export interface PartnerBrand {
    * clickable CTA, so we don't send customers to buy direct from the
    * manufacturer instead of through Kristall Fenster. */
   officialSite?: string;
-  note: string;
+  note: LocalizedText;
 }

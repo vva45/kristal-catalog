@@ -1,4 +1,5 @@
 import { PartnerDoorModel } from "../data/partners/types";
+import { getLocale } from "@/lib/i18n";
 
 interface PartnerDoorCardProps {
   model: PartnerDoorModel;
@@ -9,7 +10,9 @@ interface PartnerDoorCardProps {
  * Data" PDF button (we don't have or want an individual spec sheet per
  * design), just the photo and the key facts printed under the model code.
  */
-export default function PartnerDoorCard({ model }: PartnerDoorCardProps) {
+export default async function PartnerDoorCard({ model }: PartnerDoorCardProps) {
+  const locale = await getLocale();
+
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-lg">
       <img
@@ -22,7 +25,7 @@ export default function PartnerDoorCard({ model }: PartnerDoorCardProps) {
         <h3 className="text-black text-xl font-bold mb-1">{model.code}</h3>
 
         {model.type && (
-          <p className="text-zinc-500 text-sm mb-3">{model.type}</p>
+          <p className="text-zinc-500 text-sm mb-3">{model.type[locale]}</p>
         )}
 
         <ul className="text-zinc-600 text-sm space-y-1">
