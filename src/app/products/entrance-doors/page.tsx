@@ -10,6 +10,13 @@ import CategoryHero from "../../../components/CategoryHero";
 
 const collections = [
   {
+    href: "/products/entrance-doors/eko",
+    label: "Eko Door Panels",
+    tagline: "Our own base program - 256 panel designs in PVC, Aluminium & Wood",
+    badge: "Eko-Okna",
+    live: true,
+  },
+  {
     href: "/products/entrance-doors/roka-essential",
     label: "Roka Essential",
     tagline: "8 entry-level designs, quality at an attractive price",
@@ -66,7 +73,7 @@ export default function EntranceDoorsPage() {
       <CategoryHero
         eyebrow="Entrance Doors"
         title="Entrance Doors"
-        description="A curated selection from specialist partner brands ROKA, Monumenta and Drutex - see a few examples here, then explore each brand's full range and get support directly from them."
+        description="Our own Eko-Okna panel program, plus a curated selection from specialist partner brands ROKA, Monumenta and Drutex - see a few examples here, then explore each brand's full range and get support directly from them."
       />
 
       <section className="max-w-7xl mx-auto px-8 py-12">
