@@ -76,7 +76,6 @@ export default function DrutexDartPage() {
       <PartnerBanner
         brand={drutexDartBrand}
         catalogPdf="/pdf/entrance-doors/drutex-dart-catalogue.pdf"
-        catalogLabel="Download D-ART Line Catalogue (PDF)"
       />
     </main>
   );
